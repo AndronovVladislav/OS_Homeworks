@@ -38,19 +38,6 @@ int main(int argc, char *argv[]) {
         if (!strcmp(str, FINAL_STRING)) {
             break;
         }
-
-        // totalBytesRcvd = 0;
-        // while (totalBytesRcvd < strlen(str)) {
-        //     if (send(sock, str, strlen(str), 0) != strlen(str)) {
-        //         DieWithError("send() failed");
-        //     }
-
-        //     if ((bytesRcvd = recv(sock, str, strlen(str), 0)) <= 0) {
-        //         DieWithError("recv() failed or connection closed prematurely");
-        //     }
-
-        //     totalBytesRcvd += bytesRcvd;
-        // }
     }
 
     close(sock);
