@@ -1,3 +1,3 @@
 all:
-	gcc server.c -o server
-	gcc client.c -o client
+	gcc -g server.c -o server
+	gcc -g client.c -o client
